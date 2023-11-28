@@ -1,19 +1,16 @@
-/* Reset some default styles */
+/* Global styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    text-align: center;
 }
 
-/* Center the h1 element */
 h1 {
     color: #333;
-    text-align: center;
 }
 
-/* Center the form container */
+/* Center the form container and text content */
 form {
     background: white;
     margin: 30px auto;
@@ -22,10 +19,12 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 500px;
-    text-align: center; /* Center the text content within the form */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-/* Style the statement and likert elements */
 .statement {
     margin-bottom: 15px;
     text-align: left;
@@ -38,27 +37,3 @@ form {
 .likert input {
     margin-right: 5px;
 }
-
-/* Style the button */
-button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Style the result container */
-#result {
-    margin-top: 20px;
-    text-align: center;
-}
-
-/* Style the matched philosopher text */
-#matchedPhilosopher {
-    font-weight: bold;
-    font-size: 24px;
-}
-
-/* Add more CSS styles as needed */
