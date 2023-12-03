@@ -1,15 +1,15 @@
 // Define the philosopher data
 var philosophers = {
     "Aristotle": [3, 3, 2, 4, 2, 3],
-    "Nietzsche": [2, 3, 3, 3, 4, 2],
-    "Kant": [1, 1, 1, 5, 1, 1],
+    "Friedrich Nietzsche": [2, 3, 3, 3, 4, 2],
+    "Imnmanuel Kant": [1, 1, 1, 5, 1, 1],
     "John Stuart Mill": [5, 4, 4, 3, 2, 4],
     "John Rawls": [3, 3, 3, 3, 2, 4],
     "Philippa Foot": [4, 2, 2, 4, 3, 3],
     "Karl Marx": [2, 4, 3, 2, 1, 2],
     "Socrates": [3, 2, 2, 4, 3, 3],
     "John Locke": [4, 3, 3, 5, 1, 2],
-    //correct philosophers below to match according to correct the data
+    //correct philosophers below to match according to the correct data
     "Bertrand Russell": [4, 3, 3, 3, 3, 3],
     "Thomas Hobbes": [1, 1, 1, 1, 1, 1],
     "G.E. Moore": [1, 2, 3, 4, 5, 6]
