@@ -8,7 +8,11 @@ var philosophers = {
     "Philippa Foot": [4, 2, 2, 4, 3, 3],
     "Karl Marx": [2, 4, 3, 2, 1, 2],
     "Socrates": [3, 2, 2, 4, 3, 3],
-    "John Locke": [4, 3, 3, 5, 1, 2]
+    "John Locke": [4, 3, 3, 5, 1, 2],
+    //correct philosophers below to match according to correct the data
+    "Bertrand Russell": [4, 3, 3, 3, 3, 3],
+    "Thomas Hobbes": [1, 1, 1, 1, 1, 1],
+    "G.E. Moore": [1, 2, 3, 4, 5, 6]
 };
 
 // Function to calculate the matched philosopher
