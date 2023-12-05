@@ -18,7 +18,7 @@
                 <input type="radio" name="statement1" value="5"> Strongly Agree
             </div>
         </div>
-        
+
         <!-- Set of questions 2 -->
         <div class="statement">
             <label for="statement2"> Euthanasia is murder </label>
@@ -77,6 +77,21 @@
                 <input type="radio" name="statement6" value="4"> Agree
                 <input type="radio" name="statement6" value="5"> Strongly Agree
             </div>
+        </div>
+
+        <!-- Philosopher Image Upload Section -->
+        <div class="image-upload">
+            <label for="philosopherSelector">Select Philosopher:</label>
+            <select id="philosopherSelector" name="philosopher">
+                <option value="Aristotle">Aristotle</option>
+                <option value="Friedrich Nietzsche">Friedrich Nietzsche</option>
+                <option value="Immanuel Kant">Immanuel Kant</option>
+                <!-- Add other philosophers here -->
+                <!-- ... -->
+            </select>
+
+            <label for="imageInput">Upload Philosopher's Image:</label>
+            <input type="file" id="imageInput" accept="image/*">
         </div>
 
         <button type="button" onclick="calculateMatchAndDisplay()">Submit</button>
