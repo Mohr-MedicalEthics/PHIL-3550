@@ -17,19 +17,13 @@ var philosophers = {
 // Function to calculate the matched philosopher
 function calculateMatch(answers) {
     var bestMatch = null;
-    var bestScore = -1;
+    var bestScore = Infinity; // Changed from -1 to Infinity for proper comparison
 
-    // Iterate through philosophers and calculate scores
     for (var philosopher in philosophers) {
-        var scores = philosophers[philosopher];
         var score = 0;
-
-        // Calculate the score for this philosopher
         for (var i = 0; i < 6; i++) {
-            score += Math.abs(scores[i] - answers[i]);
+            score += Math.abs(philosophers[philosopher][i] - answers['statement' + (i + 1)]);
         }
-
-        // Check if this philosopher is the best match
         if (bestMatch === null || score < bestScore) {
             bestMatch = philosopher;
             bestScore = score;
@@ -58,28 +52,28 @@ function displayMatchedPhilosopher(matchedPhilosopher) {
         "Karl Marx": 'MedEthicsMarx.jpeg',
         "Socrates": 'MedEthicsSocrates.png',
         "John Locke": 'MedEthicsLocke.jpeg',
-        "Bertrand Russell": 'MedEthicsRussell.avi',
+        "Bertrand Russell": 'MedEthicsRussell.jpeg', // Note: .avi is a video format, not an image
         "Thomas Hobbes": 'MedEthicsHobbes.jpeg',
         "G.E. Moore": 'MedEthicsMoore.jpeg'
         // Add more philosophers and their corresponding images if needed
     };
 
-    // Set the image source to the corresponding philosopher's image
-    philosopherImageElement.src = 'images/' + imagePaths[matchedPhilosopher] || 'images/placeholder.png';
+    // Set the image source to the corresponding philosopher's image or a placeholder if not found
+    philosopherImageElement.src = 'images/' + (imagePaths[matchedPhilosopher] || 'placeholder.png');
 
     resultDiv.classList.remove('hidden');
 }
 
-// Function to calculate match and display result when the Submit button is clicked
-function calculateMatchAndDisplay() {
-    var formData = new FormData(document.getElementById('surveyForm'));
-    var answers = [];
+// Event listener for form submission
+document.getElementById('surveyForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var formData = new FormData(this);
+    var answers = {};
 
     for (var pair of formData.entries()) {
-        answers.push(pair[1]);
+        answers[pair[0]] = parseInt(pair[1], 10); // Ensure values are integers
     }
 
     var matchedPhilosopher = calculateMatch(answers);
     displayMatchedPhilosopher(matchedPhilosopher);
-}
-
+});
