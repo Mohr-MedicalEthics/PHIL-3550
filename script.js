@@ -1,18 +1,19 @@
 // Define the philosopher data
 var philosophers = {
-    "Aristotle": [3, 3, 2, 4, 2, 3],
-    "Friedrich Nietzsche": [2, 3, 3, 3, 4, 2],
-    "Immanuel Kant": [1, 1, 1, 5, 1, 1],
-    "John Stuart Mill": [5, 4, 4, 3, 2, 4],
-    "John Rawls": [3, 3, 3, 3, 2, 4],
-    "Philippa Foot": [4, 2, 2, 4, 3, 3],
-    "Karl Marx": [2, 4, 3, 2, 1, 2],
-    "Socrates": [3, 2, 2, 4, 3, 3],
-    "John Locke": [4, 3, 3, 5, 1, 2],
-    "Bertrand Russell": [4, 3, 3, 3, 3, 3],
-    "Thomas Hobbes": [1, 1, 1, 1, 1, 1],
-    "G.E. Moore": [1, 2, 3, 4, 5, 6]
+    "Aristotle": [4, 2, 2, 2, 2, 4, 2, 4, 2, 1], // Valued the middle ground (Golden Mean), practical wisdom
+    "Friedrich Nietzsche": [3, 5, 3, 5, 4, 5, 5, 1, 5, 1], // Rejected conventional morality, valued individualism
+    "Immanuel Kant": [3, 1, 1, 1, 1, 1, 1, 1, 1, 1], // Strict deontological ethics, duty and universal laws
+    "John Stuart Mill": [5, 4, 3, 3, 3, 4, 3, 5, 4, 2], // Utilitarianism, greatest happiness principle
+    "John Rawls": [5, 3, 3, 3, 2, 4, 4, 5, 3, 2], // Theory of justice, fairness, and equality
+    "Philippa Foot": [4, 3, 2, 3, 3, 4, 3, 4, 3, 2], // Virtue ethics, critic of non-cognitivism
+    "Karl Marx": [3, 5, 4, 5, 5, 5, 5, 1, 5, 1], // Historical materialism, conflict theory
+    "Socrates": [4, 3, 3, 2, 2, 4, 2, 4, 2, 1], // Socratic method, ethical questions, virtue
+    "John Locke": [4, 2, 2, 1, 1, 3, 2, 5, 2, 1], // Social contract, natural rights, consent of the governed
+    "Bertrand Russell": [5, 3, 3, 4, 3, 4, 4, 5, 4, 2], // Analytic philosophy, liberal, anti-war
+    "Thomas Hobbes": [3, 2, 2, 1, 2, 1, 1, 1, 1, 1], // Social contract, authoritarianism for peace
+    "G.E. Moore": [4, 3, 3, 3, 3, 4, 3, 4, 3, 2] // Common sense realism, ethical non-naturalism
 };
+
 
 // Function to calculate the matched philosopher
 function calculateMatch(answers) {
