@@ -37,3 +37,24 @@ form {
 .likert input {
     margin-right: 5px;
 }
+
+/* Styles for Image Upload Section */
+.image-upload {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.image-upload label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Styles for displaying the philosopher image */
+#philosopherImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
