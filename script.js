@@ -52,7 +52,7 @@ function displayMatchedPhilosopher(matchedPhilosopher) {
         "Karl Marx": 'MedEthicsMarx.jpeg',
         "Socrates": 'MedEthicsSocrates.png',
         "John Locke": 'MedEthicsLocke.jpeg',
-        "Bertrand Russell": 'MedEthicsRussell.jpeg', // Note: .avi is a video format, not an image
+        "Bertrand Russell": 'MedEthicsRussell.jpg', // Note: .avi is a video format, not an image
         "Thomas Hobbes": 'MedEthicsHobbes.jpeg',
         "G.E. Moore": 'MedEthicsMoore.jpeg'
         // Add more philosophers and their corresponding images if needed
